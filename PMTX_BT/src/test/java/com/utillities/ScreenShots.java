@@ -17,16 +17,16 @@ public class ScreenShots {
 	File SrcFile;
 
 	public ScreenShots(WebDriver driver) {
-		this.driver = driver;		
+		this.driver = driver;	
 	}
 	
-	public void takeScreenShotforLogin() {
+	public void takeScreenShotforLogin(String folderName) {
 		
 		TakesScreenshot scrShot =((TakesScreenshot)driver);
         SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
         filename =  new SimpleDateFormat("yyyyMMddhhmmss'.png'").format(new Date());
 	
-		File dest = new File("Screenshot/" + filename);
+		File dest = new File(folderName + filename);
 		
 		try {
 			FileUtils.copyFile(SrcFile, dest);
