@@ -3,6 +3,7 @@ package com.testScenarios;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 import com.pageFactory.LoginPageObjects;
+import com.utillities.CrossBrowser;
 import com.utillities.ExcelData;
 import com.utillities.ScreenShots;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -24,36 +25,14 @@ public class TestManagerPage {
 	
 	@BeforeTest
 	@Parameters("browser")
-	public void browserInit(String browser)
+	public void browserInit(String browser) throws InterruptedException
 	{
-		
-		 if(browser.equalsIgnoreCase("firefox")) {
-				
-			  WebDriverManager.firefoxdriver().setup();
-			  driver = new FirefoxDriver();	
-			  
-
-		  }else if (browser.equalsIgnoreCase("chrome")) { 
-
-			  //Initialize the chrome driver
-			  WebDriverManager.chromedriver().setup();
-			  driver = new ChromeDriver();
-			  
-
-		  } else if (browser.equalsIgnoreCase("edge")) { 
-
-			  //Initialize the edge driver
-			  WebDriverManager.edgedriver().setup();
-			  driver = new EdgeDriver();
-			  
-		  } 
-		  
+		 driver = CrossBrowser.browserInit(browser);  
 		 driver.manage().window().maximize();
 		 driver.get("https://pmt-x.vercel.app/login");
 		 obj = new LoginPageObjects(driver);
-		
-		  
-}
+				  
+    }
 
 	@Test(priority = 1)
 	public void verifyLoginPageTitle() {
@@ -76,19 +55,7 @@ public class TestManagerPage {
 
 
 	}
-	
-//	@Test(priority = 3)
-//	public void hover() {
-//		
-//		
-//		sc.takeScreenShotforManager();
-//		driver.findElement(By.className("card-img-0-2-26")).click();
-//		sc.takeScreenShotforManager();
-//		
-//		
-//	}
-	
-	
+		
 	@AfterTest
 	public void tearDown() throws IOException{     
 		driver.close();	

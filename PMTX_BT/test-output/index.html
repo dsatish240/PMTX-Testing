@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\satish.devaguptapu\eclipse-workspace\PMTX_BT\testng.xml</span>
+                    <span>C:\Users\satish.devaguptapu\git\repository2\PMTX_BT\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,21 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.testScenarios.TestLoginPage" class="method navigator-link" hash-for-method="loginRegisteredUser">loginRegisteredUser</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">7 methods,   7 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -116,6 +102,11 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.testScenarios.TestLoginPage" class="method navigator-link" hash-for-method="loginRegisteredUser">loginRegisteredUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.testScenarios.TestLoginPage" class="method navigator-link" hash-for-method="loginUnregisteredUser">loginUnregisteredUser</a> <!-- method navigator-link -->
@@ -138,6 +129,11 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.testScenarios.TestLoginPage" class="method navigator-link" hash-for-method="verifyEyeIcon">verifyEyeIcon</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.testScenarios.TestLoginPage" class="method navigator-link" hash-for-method="verifyLoginPageTitle">verifyLoginPageTitle</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -153,9 +149,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">com.testScenarios.TestLoginPage</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -164,48 +160,8 @@
                   <a name="loginRegisteredUser">
                   </a> <!-- loginRegisteredUser -->
                   <span class="method-name">loginRegisteredUser</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;root&quot;]/div[1]/button&quot;}
-  (Session info: chrome=107.0.5304.88)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ca439e1b1c4281d1f869242405827b4d, findElement {using=xpath, value=//*[@id=&quot;root&quot;]/div[1]/button}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\SATISH~1.DEV\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:62367}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62367/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ca439e1b1c4281d1f869242405827b4d
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
-	at com.pageFactory.LoginPageObjects.logout(LoginPageObjects.java:60)
-	at com.testScenarios.TestLoginPage.loginRegisteredUser(TestLoginPage.java:99)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 23 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.testScenarios.TestLoginPage</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="loginUnregisteredUser">
@@ -236,6 +192,13 @@ Session ID: ca439e1b1c4281d1f869242405827b4d
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="verifyEyeIcon">
+                  </a> <!-- verifyEyeIcon -->
+                  <span class="method-name">verifyEyeIcon</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="verifyLoginPageTitle">
                   </a> <!-- verifyLoginPageTitle -->
                   <span class="method-name">verifyLoginPageTitle</span>
@@ -246,7 +209,7 @@ Session ID: ca439e1b1c4281d1f869242405827b4d
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\satish.devaguptapu\eclipse-workspace\PMTX_BT\testng.xml</span>
+            <span class="header-content">C:\Users\satish.devaguptapu\git\repository2\PMTX_BT\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -299,36 +262,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginUnregisteredUser')
+data.setCell(0, 1, 'loginRegisteredUser')
 data.setCell(0, 2, 'com.testScenarios.TestLoginPage')
-data.setCell(0, 3, 7674);
+data.setCell(0, 3, 6037);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'loginRegisteredUser')
+data.setCell(1, 1, 'loginUnregisteredUser')
 data.setCell(1, 2, 'com.testScenarios.TestLoginPage')
-data.setCell(1, 3, 5993);
+data.setCell(1, 3, 2516);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'loginWithEmptyEmail')
+data.setCell(2, 1, 'loginWithEmptyPassword')
 data.setCell(2, 2, 'com.testScenarios.TestLoginPage')
-data.setCell(2, 3, 506);
+data.setCell(2, 3, 479);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'loginWithEmptyEmailAndPassword')
 data.setCell(3, 2, 'com.testScenarios.TestLoginPage')
-data.setCell(3, 3, 504);
+data.setCell(3, 3, 428);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'loginWithEmptyPassword')
+data.setCell(4, 1, 'loginWithEmptyEmail')
 data.setCell(4, 2, 'com.testScenarios.TestLoginPage')
-data.setCell(4, 3, 393);
+data.setCell(4, 3, 423);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifyLoginPageTitle')
+data.setCell(5, 1, 'verifyEyeIcon')
 data.setCell(5, 2, 'com.testScenarios.TestLoginPage')
-data.setCell(5, 3, 14);
+data.setCell(5, 3, 82);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyLoginPageTitle')
+data.setCell(6, 2, 'com.testScenarios.TestLoginPage')
+data.setCell(6, 3, 13);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 38 seconds</span>
+              <span class="suite-total-time">Total running time: 30 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -361,73 +328,83 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyLoginPageTitle</span>
-                <span class="method-start">7777 ms</span>
+                <span class="method-start">4447 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">7794 ms</span>
+                <span class="method-start">4463 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">browserInit(chrome)</span>
-                <span class="method-start">8223 ms</span>
+                <span class="method-start">4821 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">loginRegisteredUser</span>
-                <span class="method-start">10803 ms</span>
+                <span class="method-start">6647 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">16799 ms</span>
+                <span class="method-start">12686 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">browserInit(chrome)</span>
-                <span class="method-start">17202 ms</span>
+                <span class="method-start">13132 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginUnregisteredUser</span>
-                <span class="method-start">20310 ms</span>
+                <span class="method-start">15641 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">27985 ms</span>
+                <span class="method-start">18158 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">browserInit(chrome)</span>
-                <span class="method-start">28380 ms</span>
+                <span class="method-start">18506 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginWithEmptyEmail</span>
-                <span class="method-start">30976 ms</span>
+                <span class="method-start">20854 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">31483 ms</span>
+                <span class="method-start">21277 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">browserInit(chrome)</span>
-                <span class="method-start">31871 ms</span>
+                <span class="method-start">21629 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginWithEmptyPassword</span>
-                <span class="method-start">34439 ms</span>
+                <span class="method-start">23634 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">34832 ms</span>
+                <span class="method-start">24114 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">browserInit(chrome)</span>
-                <span class="method-start">35164 ms</span>
+                <span class="method-start">24519 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginWithEmptyEmailAndPassword</span>
-                <span class="method-start">37213 ms</span>
+                <span class="method-start">27001 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">37718 ms</span>
+                <span class="method-start">27431 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browserInit(chrome)</span>
+                <span class="method-start">27784 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyEyeIcon</span>
+                <span class="method-start">29526 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">29609 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
